@@ -5,6 +5,7 @@ import AuthenticatedLayout from '@/layouts/AuthenticatedLayout';
 import Dashboard from '@/pages/Dashboard';
 import Login from '@/pages/auth/Login';
 import ProtectedRoute from '@/components/ProtectedRoute';
+import Settings from './pages/Settings';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route element={<AuthenticatedLayout />}>
             <Route index element={<Navigate to="dashboard" />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/settings" element={<Settings />} />
           </Route>
         </Route>
       </Routes>
