@@ -8,7 +8,7 @@ import { Toaster } from '@/components/ui/sonner';
 export default function Layout() {
   return (
     <SidebarProvider>
-      <div className="flex w-[100vw]">
+      <div className="flex w-full">
         <AppSidebar />
         <div className="flex flex-col w-full">
           <Header />
@@ -22,19 +22,3 @@ export default function Layout() {
     </SidebarProvider>
   )
 }
-
-// // src/layouts/AuthenticatedLayout.tsx
-// import React from 'react';
-// import Header from '../components/Header'; // Assumindo que você tenha um componente Header
-
-// const AuthenticatedLayout: React.FC = () => {
-//   return (
-//     <div>
-//       <Header /> {/* Header que aparecerá em todas as páginas */}
-//       <main>
-//       </main>
-//     </div>
-//   );
-// };
-
-// export default AuthenticatedLayout;

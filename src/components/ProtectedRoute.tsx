@@ -5,7 +5,7 @@ import { Navigate, Outlet } from 'react-router-dom';
 const ProtectedRoute: React.FC = () => {
   // Função para verificar se o cookie `ce_token` existe
   const checkAuth = (): boolean => {
-    return document.cookie.split('; ').some((cookie) => cookie.startsWith('ce_token='));
+    return document.cookie.split('; ').some((cookie) => cookie.startsWith('access_token='));
   };
 
   const isAuthenticated = checkAuth();
